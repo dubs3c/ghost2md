@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "ghost2md"
+version = "0.1.0"
+description = "Convert Ghost articles to markdown files"
+authors = ["Michael Dubell <michael@dubell.io>"]
+homepage = "https://github.com/mjdubell/ghost2md"
+repository = "https://github.com/mjdubell/ghost2md"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.4"
+
+[tool.poetry.dev-dependencies]
+pytest = "^3.0"
+
+[tool.poetry.scripts]
+ghost2md = "ghost2md.ghost2md:main"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
